@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
 import TitleCard from "../components/TitleCard";
 import { FaArrowUp } from 'react-icons/fa'; // FontAwesome Lock Icon & Arro
 
@@ -14,7 +14,7 @@ const cardData2 = [
 ];
 
 const cardData3 = [
-    { image: "/about/7.2.jpeg", name: "Manan Tarsairya", text: "Backend + Literature Survey", href: "https://www.linkedin.com/in/manan-tarsariya-903587292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+    { image: "/about/7.2.jpeg", name: "Manan Tarsariya", text: "Backend + Literature Survey", href: "https://www.linkedin.com/in/manan-tarsariya-903587292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
     { image: "/about/8.jpg", name: "Jit Prajapati", text: "Website Deployment", href: "https://www.linkedin.com/in/jit-prajapati-7b39392a9/" },
     { image: "/about/9.2.jpg", name: "Jainex Pumbhaidiya", text: "Website Deployment", href: "https://www.linkedin.com/in/jainex-pumbhadiya-5094812b6/" },
 ];
@@ -81,7 +81,7 @@ export function Component() {
                         <TitleCard cardData={cardData2} numberOfCards={3} />
                         <TitleCard cardData={cardData3} numberOfCards={3} />
                     </div>
-                     {/* Back to Top Button */}
+                    {/* Back to Top Button */}
                     {showButton && (
                         <button
                             onClick={scrollToTop}

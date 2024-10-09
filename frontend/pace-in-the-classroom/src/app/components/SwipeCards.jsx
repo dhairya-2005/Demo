@@ -41,7 +41,7 @@ const SwipeCards = () => {
     const fetchCommitmentsForGroup = async (groupId) => {
         setLoading(true);
         try {
-            const response = await axios.get(`http://localhost:8080/groups/${groupId}/commitments`);
+            const response = await axios.get(`${newApi}/groups/${groupId}/commitments`);
             setCommitments(response.data);
         } catch (error) {
             console.error("Error fetching commitments:", error);

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Globe from './Globe'; // 3D Globe component
-import Map2D from './Map2D'; // 2D Map component
 import { FaTimes } from 'react-icons/fa';
 import Chart from './Chart';
 import MapControls from './MapControls';
@@ -49,6 +48,7 @@ function NewMap() {
           }));
           setIsLoading(false); // Data loaded, hide loading
         } else {
+          console.log(import.meta.env.VITE_BACKEND_API);
           setIsFetching(false);
         }
       } catch (error) {
